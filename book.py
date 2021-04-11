@@ -26,4 +26,4 @@ class Book:
     def get_move(self,line):
         book_move=self.book.get(line)
         if book_move: return book_move[random.randint(0,len(book_move)-1)]
-        return ()
+        return ""
