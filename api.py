@@ -13,7 +13,7 @@ except ImportError:
 
 import backoff
 
-ENDPOINTS = {
+ENDPOINTS={
     "arrow":"/bot?token={}&arrows={}",
     "chat":"/bot?token={}&chat={}",
     "play":"/bot?token={}&play={}",
