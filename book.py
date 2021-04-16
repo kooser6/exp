@@ -1,6 +1,7 @@
 #!/usr/bin/env pypy
 # -*- coding: utf-8 -*-
 
+import arrows
 from random import randint
 
 class Book():
