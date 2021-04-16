@@ -1,9 +1,9 @@
 #!/usr/bin/env pypy
 # -*- coding: utf-8 -*-
 
-import random
+from random import randint
 
-class Book:
+class Book():
     def __init__(self,path=""):
         self.book={}
         if path!="": self.import_book(path)
@@ -25,5 +25,5 @@ class Book:
  
     def get_move(self,line):
         book_move=self.book.get(line)
-        if book_move: return book_move[random.randint(0,len(book_move)-1)]
+        if book_move: return book_move[randint(0,len(book_move)-1)]
         return ""
